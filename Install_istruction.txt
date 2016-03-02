@@ -1,0 +1,78 @@
+IFIT - IDAA Function Interactive Tools Version 1.0.0 for z/OS Readme            
+                                                                                
+(c) 2015. All Rights Reserved.                                                  
+                                                                                
+          I N S T A L L A T I O N   N O T E S                                   
+                                                                                
+CONTENTS                                                                        
+--------                                                                        
+                                                                                
+1.0  ABOUT THIS README FILE                                                     
+1.1  Who should read this readme file                                           
+                                                                                
+2.0  INSTALLING THE LIBRARY PACKAGE                                             
+                                                                                
+3.0  REQUIREMENTS                                                               
+                                                                                
+                                                                                
+1.0  ABOUT THIS README FILE                                                     
+---------------------------                                                     
+                                                                                
+This file contains the latest information about installing the                  
+IFIT - IDAA Function Interactive Tools Version 1.0.0.                           
+                                                                                
+                                                                                
+1.1  Who should read this readme file                                           
+                                                                                
+Users who want to install the IFIT - IDAA Function under z/OS                   
+and/or TSO/E.                                                                   
+                                                                                
+                                                                                
+2.0  INSTALLING THE LIBRARY PACKAGE                                             
+---------------------------------------------                                   
+                                                                                
+IFIT is a Library package shipped in XMIT Library file format.                  
+                                                                                
+The following steps are required to install IFIT Library:                       
+                                                                                
+  (1.) Download and unzip IFIT.ZIP in a temporary directory on                  
+       a PC. It contains the following directory:                                   
+                                                                                
+        *  IFIT.LIBRARY.USER (XMIT format of installation LIBRARY               
+        *  This README file with the latest installation information            
+                                                                                                                                                 
+                                                                                
+  (2.) PDSE IFIT.LIBRARY.USER directoty contains the members:                             
+                                                                                
+        * UDDL    -  DDL to activate some functions                             
+        * ULOAD   -  LOAD need to execute applications                          
+        * UPANEL  -  Panels                                                     
+        * UREXX   -  REXX procedures                                            
+        * USKEL   -  Skeleton                                                   
+                                                                                
+       all members are in XMIT format.                                      
+
+  (3.) Transfer in z/OS server IFIT.LIBRARY.USER members in bynary mode in a            
+       preallocated sequential (RECFM=FB LRECL=80 BLKSIZE=3120) using           
+       FTP or other trasfer program (IND$FILE, etc.)                            
+         
+
+  (4.) In z/OS TSO session restore PDSE IFIT.LIBRARY using command:             
+                                                                                
+        * RECEIVE INDA(members.XMIT)                                       
+                                                                                
+       this command restore the PDSE IFIL Installation Library                                                                                
+
+  (5.) Define objects in UDDL using SPUFI in DB2 subsystem connected to IDAA.   
+                                                                                
+  (6.) Customize $IDFITLS to your own library prefix and put it in a SYSEXEC    
+       library concatenation.                                                   
+                                                                                
+  (7.) Exec $IDFITLS and enjoy for application.                                 
+                                                                                
+                                                                                
+3.0  REQUIREMENTS                                                               
+-----------------                                                               
+                                                                                
+IFIT use DSNREXX stub for SQL and DSNTIAR for SQL error routine. Both must need 
+available in user steplib or linklst concatenation.                             
