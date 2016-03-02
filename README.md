@@ -14,7 +14,7 @@
 #
 # Refer to file "Install_istruction.txt" for installation instructions.
 #
-# Refer to file "IFIT – IDAA Functions Interactive Tool.pdf" 
-# for a presentation of the tool and useability.
-#
-#------------------------------------------------------------------------------
+# Refer to file "IFIT – IDAA Functions Interactive 
+# Tool.pdf" for a presentation of the tool and useability.
+# 
+#--------------------------------------------------------------------------
