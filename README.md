@@ -15,4 +15,7 @@
  Refer to file "IFIT – IDAA Functions Interactive Tool.pdf" for a 
  presentation of the tool and useability.
  
+ Salvatore Mancini
+ DB2 & Big Data expertise
+ 
 #--------------------------------------------------------------------------
