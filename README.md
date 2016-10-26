@@ -1,7 +1,4 @@
-#-------------------------------------------------------------------------
-
 # -IFIT Repository
-
 # IFIT (IDAA Functions Interactive Tool) 
  
   This tool enable the execution of main "IDAA" functions in z/OS environment 
@@ -12,9 +9,8 @@
  
   Refer to file "Install_istruction.txt" for installation instructions.
 
- Refer to file "IFIT – IDAA Functions Interactive Tool.pdf" for a 
+ Refer to file "IFIT â€“ IDAA Functions Interactive Tool.pdf" for a 
  presentation of the tool and useability.
  
  Salvatore Mancini (DB2 & Big Data expertise)
  
-#--------------------------------------------------------------------------
