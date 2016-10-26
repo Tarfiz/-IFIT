@@ -1,5 +1,5 @@
 # -IFIT Repository
-# IFIT (IDAA Functions Interactive Tool) 
+# IFIT IDAA Functions Interactive Tool for z/OS Ver. 1.0.0 
  
   This tool enable the execution of main "IDAA" functions in z/OS environment 
   without to use  "IBM Data Studio". 
